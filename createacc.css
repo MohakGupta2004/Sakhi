@@ -1,0 +1,110 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fdeee4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    background-color: #92352a;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+}
+
+/* Title */
+h2 {
+    color: #4a1c16;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #fff;
+}
+
+/* Checkbox Section */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    margin: 10px 0;
+    color: #f9e8e1;
+    font-size: 14px;
+}
+
+.checkbox-container input {
+    width: 16px;
+    height: 16px;
+    accent-color: #5a1e16;
+}
+
+.checkbox-container a {
+    color: #fdd6c1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.checkbox-container a:hover {
+    text-decoration: underline;
+}
+
+/* Sign-Up Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #fdd6c1;
+    color: #5a1e16;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #fbc5ad;
+}
+
+/* Back Button - Uniform Design */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: none;
+    border: none;
+    color: #5a1e16;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.back-button::before {
+    content: "←";
+    font-size: 18px;
+}
+
+.back-button:hover {
+    text-decoration: underline;
+}
