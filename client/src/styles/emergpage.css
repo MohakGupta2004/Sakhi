@@ -1,0 +1,71 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fdeee4; /* Soft background color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Menu Container */
+.menu-container {
+    position: relative;
+}
+
+.hamburger {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Navigation Menu */
+.menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 50px; /* Adjust based on your layout */
+    left: 0;
+    background-color: #92352a; /* Dark background for the menu */
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.menu.show {
+    display: block; /* Show the menu when toggled */
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    color: #fdd6c1; /* Light color for text */
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #fbc5ad; /* Lighten background on hover */
+}
+
+/* Container */
+.container {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Emergency Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #fdd6c1;
+    color: #5a1e16;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #fbc5ad; /* Lighten background on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+} 

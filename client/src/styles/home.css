@@ -45,28 +45,48 @@ body {
 
 button {
     width: 100%;
-    padding: 10px;
+    padding: 12px 20px;
     border: none;
     font-size: 16px;
-    border-radius: 25px;
+    border-radius: 8px;
     margin: 8px 0;
     cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .primary {
     background: #9B3D2D;
     color: white;
+    font-weight: bold;
+}
+
+.primary:hover {
+    background: #7F2E23;
 }
 
 .secondary {
-    background: none;
+    background: white;
     border: 2px solid #9B3D2D;
     color: #9B3D2D;
+    font-weight: bold;
+}
+
+.secondary:hover {
+    background: #9B3D2D;
+    color: white;
 }
 
 .sos {
     background: #D92027;
     color: white;
     font-weight: bold;
-    letter-spacing: 1px;
+}
+
+.sos:hover {
+    background: #B71C1C;
 }
