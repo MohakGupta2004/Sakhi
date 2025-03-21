@@ -3,9 +3,10 @@ body {
     background-color: #FCE9D7;
     text-align: center;
     margin: 0;
-    padding: 0;
   }
-  
+  .supercontainer{
+    padding: 190px;
+  }
   .container {
     width: 90%;
     max-width: 400px;

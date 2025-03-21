@@ -13,8 +13,9 @@ const Login = () => {
 
         try {
             const response = await api.post('/auth/login', { email, password }); // Send login request
-            if (response.status === 200) {
+            if (response) {
                 // If login is successful, navigate to the Dashboard
+                localStorage.setItem("token", response.data.token)
                 navigate('/dashboard');
             }
         } catch (error) {

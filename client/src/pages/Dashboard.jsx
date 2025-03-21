@@ -4,6 +4,8 @@ import '../styles/dashboard.css'; // Import the CSS file for styling
 
 const Dashboard = () => {
     return (
+        <div className='supercontainer'>
+
         <div className="container">
             <div className="menu-icon">
                 <span>&#9776;</span>
@@ -20,6 +22,7 @@ const Dashboard = () => {
                 <Link to="/mental-health" className="button">MENTAL HEALTH</Link>
             </div>
             
+        </div>
         </div>
     );
 };

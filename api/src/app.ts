@@ -6,7 +6,7 @@ import cors from 'cors'
 const app = express()
 connectDB()
 app.use(cors({
-  origin: process.env.FRONTEND_URL
+  origin: "*"
 }))
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))

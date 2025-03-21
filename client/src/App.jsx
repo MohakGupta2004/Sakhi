@@ -16,6 +16,8 @@ import ProtectedRoute from './components/ProtectedRoute';
 
 const App = () => {
     return (
+        <div className='app-container'>
+
         <Router>
             <Routes>
                 <Route path="/" element={<Home />} />
@@ -30,6 +32,7 @@ const App = () => {
                 <Route path="/mental-health" element={<ProtectedRoute component={MentalHealth} />} />
             </Routes>
         </Router>
+        </div>
     )
 }
 
