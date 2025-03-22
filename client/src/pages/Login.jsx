@@ -25,6 +25,8 @@ const Login = () => {
     };
 
     return (
+        <div className='supercontainer'>
+
         <div className="container">
             <Link to="/" className="back">&larr; Back</Link>
             <h2>Welcome Back Sakhi!</h2>
@@ -36,7 +38,7 @@ const Login = () => {
                     value={email} 
                     onChange={(e) => setEmail(e.target.value)} 
                     required 
-                />
+                    />
                 <label>Password</label>
                 <input 
                     type="password" 
@@ -44,10 +46,11 @@ const Login = () => {
                     value={password} 
                     onChange={(e) => setPassword(e.target.value)} 
                     required 
-                />
+                    />
                 <button type="submit" className="signin">SIGN IN</button>
             </form>
         </div>
+</div>
     );
 };
 

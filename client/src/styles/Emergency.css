@@ -60,7 +60,7 @@
     color: #dc2626;
     animation: pulse 1.5s infinite;
   }
-  
+    
   @keyframes pulse {
     0% {
       opacity: 1;

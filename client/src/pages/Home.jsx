@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
+    <div className="supercontainer">
+
     <div className="container">
       <div className="card">
         <div className="header">
@@ -26,6 +28,7 @@ const Home = () => {
           <Link to="/emergency" className="sos" >EMERGENCY SOS 🚨</Link>
         </div>
       </div>
+    </div>
     </div>
   );
 };

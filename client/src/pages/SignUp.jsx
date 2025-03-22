@@ -27,6 +27,8 @@ const SignUp = () => {
     };
 
     return (
+    <div className='supercontainer'>
+
         <div className="container">
             <Link to="/" className="back-button">Back</Link>
             <h2>Create an Account</h2>
@@ -42,7 +44,7 @@ const SignUp = () => {
                         }))
                     }
                     required 
-                />
+                    />
                 <input 
                     type="password" 
                     placeholder="Password" 
@@ -54,7 +56,7 @@ const SignUp = () => {
                         }))
                     }
                     required 
-                />
+                    />
                 <div className="checkbox-container">
                     <input type="checkbox" />
                     <label>I agree to the <a href="#">terms and conditions</a></label>
@@ -67,6 +69,7 @@ const SignUp = () => {
             </form>
             {error && <p className="text-center text-red-700 p-4">{error}</p>} {/* Error message */}
         </div>
+</div>
     );
 };
 
