@@ -1,0 +1,74 @@
+.emergency-container {
+    min-height: 100vh;
+    background-color: #E5A87D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .emergency-card {
+    background-color: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .title {
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .mic-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    visibility: visible;
+  }
+  .grey{
+    color: grey;
+  }
+  .red{
+    color: red;
+  }
+  
+  .mic-button:hover {
+    transform: scale(1.1);
+  }
+  
+  .mic-button:active {
+    transform: scale(0.95);
+  }
+  
+  .status-text {
+    margin-top: 1rem;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .recording {
+    color: #dc2626;
+    animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
