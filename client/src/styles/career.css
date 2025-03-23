@@ -83,14 +83,6 @@ body {
     border-color: #E5A87D; /* Change border color on focus */
 }
 
-.search-icon {
-    position: absolute;
-    left: 0.75rem; /* Adjusted space from left */
-    top: 50%; /* Center vertically */
-    transform: translateY(-50%); /* Adjust for centering */
-    color: #9ca3af; /* Gray color for icon */
-    margin-top: 0; /* Removed margin above the icon */
-}
 
 .icon {
     width: 16px;

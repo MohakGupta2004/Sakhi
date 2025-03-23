@@ -1,0 +1,210 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NGO Help Page Styles */
+.ngo-listing {
+    min-height: 100vh;
+    background-color: #FDF6F2;
+    font-family: Arial, sans-serif;
+    overflow-y: auto;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #E5A87D;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.container-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.section-layout {
+    display: flex;
+    gap: 2rem;
+}
+
+.applied-volunteering {
+    width: 33.333333%;
+}
+
+.available-opportunities {
+    width: 66.666667%;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #E5A87D;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.search-container {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.search-input {
+    width: 100%;
+    padding: 0.75rem 2.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.search-input:focus {
+    border-color: #E5A87D;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+}
+
+.opportunity-card {
+    background-color: #FDF6F2;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.opportunity-card-content {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.ngo-logo {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.opportunity-info {
+    flex: 1;
+}
+
+.opportunity-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1F2937;
+    margin-bottom: 0.5rem;
+}
+
+.opportunity-details {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #4B5563;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.875rem;
+}
+
+.apply-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #E5A87D;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+.apply-button:hover {
+    background-color: #d89668;
+}
+
+.applied-card {
+    background-color: #FDF6F2;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.applied-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.applied-logo {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 9999px;
+    object-fit: cover;
+}
+
+.applied-status {
+    font-size: 0.875rem;
+    color: #E5A87D;
+    margin-top: 0.25rem;
+}
+
+.empty-state {
+    text-align: center;
+    color: #6B7280;
+    padding: 1rem 0;
+    font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+    .section-layout {
+        flex-direction: column;
+    }
+
+    .applied-volunteering,
+    .available-opportunities {
+        width: 100%;
+    }
+
+    .opportunity-card-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .opportunity-details {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .apply-button {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.scrollable-container {
+    max-height: 800px; /* Set a max height for the scrollable area */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
