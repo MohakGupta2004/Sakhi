@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #F9F5F2; */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .financial-help-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .header {
+    background-color: #E5A87D;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .assistance-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .card h2 {
+    color: #E5A87D;
+  }
+  
+  .btn {
+    background-color: #E5A87D;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #D89268;
+  }
+  
