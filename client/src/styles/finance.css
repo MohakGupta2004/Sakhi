@@ -1,9 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-    /* background-color: #F9F5F2; */
-    margin: 0;
-    padding: 0;
-  }
+
   
   .financial-help-container {
     text-align: center;
@@ -26,18 +21,18 @@ body {
     flex-wrap: wrap;
   }
   
-  .card {
+    .f-card {
     background-color: white;
-    display: flex;
+    display: flex; 
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; 
     border-radius: 10px;
     padding: 20px;
     width: 250px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
-  
+   
   .card h2 {
     color: #E5A87D;
   }
