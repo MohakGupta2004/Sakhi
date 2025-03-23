@@ -1,0 +1,208 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* Use a clean font */
+    background-color: #f9f9f9; /* Light background for contrast */
+    color: #333; /* Dark text for readability */
+}
+
+/* Custom styles for the job listing page */
+.job-listing {
+    padding: 2rem; /* Add padding around the job listing */
+    height: 100vh; /* Set height to full viewport height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    background-color: #FDF6F2;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.page-title {
+    font-size: 2.5rem; /* Larger title */
+    font-weight: bold; /* Bold title */
+    color: #E5A87D; /* Main color */
+    text-align: center; /* Center the title */
+    margin-bottom: 2rem; /* Space below the title */
+}
+
+.container-wrapper {
+    max-width: 1200px; /* Limit the width of the container */
+    margin: 0 auto; /* Center the container */
+    padding: 1rem; /* Add padding */
+    background-color: #fff; /* White background for the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.section-layout {
+    display: flex; /* Flexbox for layout */
+    gap: 2rem; /* Space between sections */
+}
+
+.applied-jobs,
+.available-jobs {
+    flex: 1; /* Allow sections to grow */
+}
+
+.card {
+    background-color: #fff; /* White background for cards */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 1.5rem; /* Padding inside cards */
+}
+
+.section-title {
+    font-size: 1.5rem; /* Title size */
+    font-weight: 600; /* Bold title */
+    color: #E5A87D; /* Main color */
+    margin-bottom: 1rem; /* Space below title */
+    display: flex; /* Flexbox for icon and title */
+    align-items: center; /* Center items vertically */
+    gap: 0.5rem; /* Space between icon and title */
+}
+
+.search-container {
+    position: relative; 
+    margin-bottom: 1.5rem; /* Space below search */
+}
+
+.search-input {
+    width: 100%;/* Full width */
+    padding: 0.5rem 2.5rem; /* Padding for input */
+    border: 1px solid #e2e8f0; /* Light border */
+    border-radius: 0.5rem; /* Rounded corners */
+    outline: none; /* No outline */
+    transition: border-color 0.2s; /* Smooth border transition */
+}
+
+.search-input:focus {
+    border-color: #E5A87D; /* Change border color on focus */
+}
+
+.search-icon {
+    position: absolute;
+    left: 0.75rem; /* Adjusted space from left */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for centering */
+    color: #9ca3af; /* Gray color for icon */
+    margin-top: 0; /* Removed margin above the icon */
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+}
+
+.job-card, .applied-job-card {
+    display: flex; /* Flexbox for job cards */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between job info and button */
+    padding: 1rem; /* Padding inside job cards */
+    border: 1px solid #e2e8f0; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 1rem; /* Space below job cards */
+    transition: box-shadow 0.2s; /* Smooth shadow transition */
+}
+
+.job-card:hover, .applied-job-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.company-image, .applied-company-image {
+    width: 60px; /* Fixed width for images */
+    height: 60px; /* Fixed height for images */
+    border-radius: 50%; /* Circular images */
+    object-fit: cover; /* Cover the area */
+}
+
+.job-title {
+    font-size: 1.25rem; /* Job title size */
+    font-weight: 600; /* Bold job title */
+    color: #1f2937; /* Dark color for job title */
+}
+
+.job-details {
+    display: flex; /* Flexbox for job details */
+    align-items: center; /* Center items vertically */
+    gap: 1rem; /* Space between details */
+    margin-top: 0.5rem; /* Space above details */
+    color: #4b5563; /* Gray color for details */
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.875rem;
+}
+
+.apply-button {
+    padding: 0.5rem 1rem; /* Padding for button */
+    background-color: #E5A87D; /* Main color */
+    color: white; /* White text */
+    border: none; /* No border */
+    width: 200px;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.2s; /* Smooth background transition */
+}
+
+.apply-button:hover {
+    background-color: #d89668; /* Darker shade on hover */
+}
+
+.applied-job-card {
+    background-color: #FDF6F2;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.applied-job-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.applied-status {
+    font-size: 0.875rem;
+    color: #E5A87D;
+    margin-top: 0.25rem;
+}
+
+.empty-state {
+    text-align: center; /* Center text */
+    color: #6b7280; /* Gray color for empty state */
+    margin-top: 1rem; /* Space above */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-layout {
+        flex-direction: column;
+    }
+
+    .applied-jobs,
+    .available-jobs {
+        width: 100%;
+    }
+
+    .job-card-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .job-details {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .apply-button {
+        width: 100%;
+        justify-content: center;
+    }
+}
