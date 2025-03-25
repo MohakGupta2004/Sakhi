@@ -6,7 +6,7 @@ import cors from 'cors'
 const app = express()
 connectDB()
 app.use(cors({
-  origin: "*"
+  origin: "https://sakhi-black.vercel.app"
 }))
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
