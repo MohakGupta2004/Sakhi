@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000;
 
 const io = new Server(server, {
   cors: {
-    origin: "*",
+    origin: "https://sakhi-black.vercel.app",
     methods: ["GET", "POST"],
   },
 });
