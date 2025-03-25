@@ -51,6 +51,7 @@ io.on("connection", (socket: AuthSocket) => {
   }
 
   console.log(`SOCKET_ID: `, socket.id);
+  console.log(`Gemini api key: `, process.env.AI_API_KEY!);
   socket.join(socket.mentalhealth._id);
 
  
