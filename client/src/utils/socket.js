@@ -1,3 +1,7 @@
+import { io } from "socket.io-client";
+
+let socketInstance = null;
+
 export const initializeSocket = (projectId) => {
   if (socketInstance && socketInstance.connected) {
     console.log("⚡ Reusing existing WebSocket connection:", socketInstance.id);
