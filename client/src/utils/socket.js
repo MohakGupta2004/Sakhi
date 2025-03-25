@@ -39,3 +39,19 @@ export const initializeSocket = (projectId) => {
 
   return socketInstance;
 };
+
+export const sendMessage = (eventName, data) => {
+  if (!socketInstance || !socketInstance.connected) {
+    console.warn("⚠️ Cannot send message, socket not initialized or disconnected.");
+    return;
+  }
+  console.log("📤 Sending message:", eventName, data);
+  socketInstance.emit(eventName, data);
+};
+export const receiveMessage = (eventName, cb) => {
+  if (!socketInstance) {
+    console.warn("⚠️ No active socket connection.");
+    return;
+  }
+  socketInstance.on(eventName, cb);
+};
