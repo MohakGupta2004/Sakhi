@@ -24,7 +24,7 @@ export const initializeSocket = (projectId) => {
     options.query = { projectId }; // ✅ Include only if defined
   }
 
-  socketInstance = io("http://localhost:5000", options);
+  socketInstance = io("https://sakhi-nltm.onrender.com", options);
 
   socketInstance.on("connect", () => {
     console.log("✅ WebSocket Connected:", socketInstance?.id);
